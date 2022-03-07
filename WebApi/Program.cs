@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using WebApi.DBOperations;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using WebApi.Middlewares;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,6 +37,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCustomExceptionMiddleware();
 
 app.MapControllers();
 
