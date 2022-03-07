@@ -74,21 +74,11 @@ namespace WebApi.Controllers
         public IActionResult AddBook([FromBody] CreateBookModel newBook)
         {
             CreateBookCommand command = new CreateBookCommand(_context, _mapper);
-            try
-            {
-                command.Model = newBook;
+            command.Model = newBook;
+            CreateBookCommandValidator validator = new CreateBookCommandValidator();
+            validator.ValidateAndThrow(command);
+            command.Handle();
 
-                CreateBookCommandValidator validator = new CreateBookCommandValidator();
-                
-                validator.ValidateAndThrow(command);
-                
-                command.Handle();
-                
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
             return Ok();
         }
 
