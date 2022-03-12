@@ -4,6 +4,7 @@ using static WebApi.BookOperations.GetBookDetail.GetBookDetailQuery;
 using WebApi.BookOperations.GetBookDetail;
 using WebApi.BookOperations.GetBooks;
 using WebApi.Common;
+using WebApi.Entities;
 
 namespace WebApi.Common
 {

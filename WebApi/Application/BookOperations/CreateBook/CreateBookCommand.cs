@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApi;
 using WebApi.DBOperations;
 using AutoMapper;
+using WebApi.Entities;
 
 
 namespace WebApi.BookOperations.CreateBook

@@ -20,7 +20,7 @@ builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 //builder.Services.AddDbContext<BookStoreDBContext>(x => x.DatabaseName("BookStoreDB"));
 
-builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
+builder.Services.AddSingleton<ILoggerService, DBLogger>();
 
 var app = builder.Build();
 

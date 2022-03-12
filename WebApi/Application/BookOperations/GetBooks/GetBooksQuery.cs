@@ -5,6 +5,7 @@ using WebApi;
 using WebApi.DBOperations;
 using WebApi.Common;
 using AutoMapper;
+using WebApi.Entities;
 
 namespace WebApi.BookOperations.GetBooks
 {
