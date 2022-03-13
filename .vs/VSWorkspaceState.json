@@ -2,15 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\WebApi",
-    "\\WebApi\\BookOperations",
-    "\\WebApi\\BookOperations\\GetBooks",
-    "\\WebApi\\Common",
-    "\\WebApi\\Controllers",
-    "\\WebApi\\DBOperations",
-    "\\WebApi\\Middlewares",
-    "\\WebApi\\obj",
-    "\\WebApi\\Properties"
+    "\\WebApi\\Services"
   ],
-  "SelectedNode": "\\WebApi\\Middlewares\\CustomExceptionMiddlewares.cs",
   "PreviewInSolutionExplorer": false
 }

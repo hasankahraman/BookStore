@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using WebApi;
 using WebApi.DBOperations;
-using WebApi.BookOperations;
-using WebApi.BookOperations.GetBooks;
-using WebApi.BookOperations.CreateBook;
-using WebApi.BookOperations.GetBookDetail;
-using WebApi.BookOperations.UpdateBook;
-using WebApi.BookOperations.DeleteBook;
+using WebApi.Application.BookOperations;
+using WebApi.Application.BookOperations.Queries.GetBooks;
+using WebApi.Application.BookOperations.Commands.CreateBook;
+using WebApi.Application.BookOperations.Queries.GetBookDetail;
+using WebApi.Application.BookOperations.Commands.UpdateBook;
+using WebApi.Application.BookOperations.Commands.DeleteBook;
 using AutoMapper;
-using static WebApi.BookOperations.CreateBook.CreateBookCommand;
-using static WebApi.BookOperations.GetBookDetail.GetBookDetailQuery;
+using static WebApi.Application.BookOperations.Commands.CreateBook.CreateBookCommand;
+using static WebApi.Application.BookOperations.Queries.GetBookDetail.GetBookDetailQuery;
 using FluentValidation.Results;
-using WebApi.BookOperations.CreateBook;
+using WebApi.Application.BookOperations.Commands.CreateBook;
 using FluentValidation;
-using WebApi.BookOperations.DeleteBook;
-using WebApi.BookOperations.UpdateBook;
 
 namespace WebApi.Controllers
 {
