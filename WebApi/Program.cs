@@ -44,7 +44,7 @@ builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 //builder.Services.AddDbContext<BookStoreDBContext>(x => x.DatabaseName("BookStoreDB"));
 
-builder.Services.AddSingleton<ILoggerService, DBLogger>();
+builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
 
 var app = builder.Build();
 IConfiguration configuration = app.Configuration;

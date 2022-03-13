@@ -6,7 +6,7 @@ using WebApi.DBOperations;
 using AutoMapper;
 using FluentValidation.Results;
 using FluentValidation;
-using AutoMapper.Configuration;
+using Microsoft.Extensions.Configuration;
 using WebApi.Application.UserOperations.Commands.CreateUser;
 using static WebApi.Application.UserOperations.Commands.CreateUser.CreateUserCommand;
 
