@@ -13,7 +13,6 @@ using AutoMapper;
 using static WebApi.Application.BookOperations.Commands.CreateBook.CreateBookCommand;
 using static WebApi.Application.BookOperations.Queries.GetBookDetail.GetBookDetailQuery;
 using FluentValidation.Results;
-using WebApi.Application.BookOperations.Commands.CreateBook;
 using FluentValidation;
 
 namespace WebApi.Controllers

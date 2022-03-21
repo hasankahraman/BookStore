@@ -53,6 +53,26 @@ namespace WebApi.DBOperations
                     }
                 );
 
+                context.Authors.AddRange(
+                    new Author{
+                        Name = "Dan",
+                        Surname = "Brown",
+                        Birthday = new DateTime(1980,02,02)
+                    },
+                    
+                    new Author{
+                        Name = "Jean Christophe",
+                        Surname = "Grange",
+                        Birthday = new DateTime(1975,05,05)
+                    },
+                    
+                    new Author{
+                        Name = "Ahmet",
+                        Surname = "Ümit",
+                        Birthday = new DateTime(1970,10,03)
+                    }
+                );
+
                 context.SaveChanges();
             }
         }
